@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: radial-gradient(circle at top, rgba(30, 58, 138, 0.4), transparent),
+    #020617;
+}
+
+.glass-panel {
+  @apply backdrop-blur border border-slate-700/60 bg-slate-900/60 shadow-2xl shadow-primary-900/20;
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-primary-500 px-4 py-2 font-semibold text-white transition hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-300 disabled:cursor-not-allowed disabled:bg-primary-500/30;
+}
+
+.button-secondary {
+  @apply inline-flex items-center justify-center rounded-lg border border-slate-600 bg-slate-800 px-4 py-2 font-semibold text-slate-200 transition hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-200 disabled:cursor-not-allowed disabled:opacity-50;
+}
